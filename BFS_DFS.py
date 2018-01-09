@@ -37,8 +37,8 @@ class graph:
         while not q.empty():
             currentVertex = self.vertices[q.get()]
             print currentVertex.get_name()
-            for neighbours in currentVertex.get_neighbours():
-                q.put(neighbours)
+            for x in currentVertex.get_neighbours():
+                q.put(x)
 
     def DFS(self, root):
         s = Queue.LifoQueue()  # implimenting stack
@@ -50,19 +50,22 @@ class graph:
                 s.put(neighbours)
 
 
-newBFs = graph()
+newGraph = graph()
 
-newBFs.add_vertices('A')
-newBFs.add_edge('A','B',2)
-newBFs.add_edge('B','C',5)
-newBFs.add_edge('B','D',1)
-newBFs.add_edge('C','E',3)
-newBFs.add_edge('D','I',9)
-newBFs.add_edge('C','F',5)
+newGraph.add_vertices('A')
+newGraph.add_edge('A','B',2)
+newGraph.add_edge('B','C',5)
+newGraph.add_edge('B','D',1)
+newGraph.add_edge('C','E',3)
+newGraph.add_edge('D','I',9)
+newGraph.add_edge('C','F',5)
 
 print 'BFS'
-newBFs.BFS('A')
+newGraph.BFS('A')
 print '-----'
 print 'DFS'
-newBFs.DFS('A')
-# print newBFs.countVertices
+newGraph.DFS('A')
+
+print '-----'
+print 'No of vertex:',newGraph.countVertices
+
