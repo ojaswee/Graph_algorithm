@@ -4,6 +4,7 @@ The first vertex will always be a vertex without in-coming edges
 
 '''
 import Queue
+from Queue import PriorityQueue
 
 class vertex:
     def __init__(self,_name):
@@ -22,6 +23,9 @@ class vertex:
     def get_neighbours(self):
         return self.neighbours.keys()
 
+    def get_weight(self, newVertex):
+        return self.neighbours[newVertex]
+
 class graph:
     def __init__(self):
         self.vertices = {}
@@ -38,6 +42,7 @@ class graph:
         if toVertex not in self.vertices:
             self.add_vertices(toVertex)
         self.vertices[fromVertex].add_neighbours(toVertex, weight)
+
 
     def topologicalSort(self, root):
         s = Queue.LifoQueue()  # implimenting stack
@@ -61,18 +66,52 @@ class graph:
                 print currentVertex.get_name()
 
 
-newBFs = graph()
+    '''
+    Prims find the minimum spanning tree, 
+    It is a greedy algorithm
+    we need to use priority queue because it has to get the shortest distance first
+    Here the next vertex we chose should be neighbour of current vertex
+    '''
 
-newBFs.add_vertices('A')
-newBFs.add_edge('A','B',2)
-newBFs.add_edge('B','C',5)
-newBFs.add_edge('B','D',1)
-newBFs.add_edge('C','E',3)
-newBFs.add_edge('D','I',9)
-newBFs.add_edge('C','F',5)
-newBFs.add_edge('D','C',5)
+    def prim(self):
+        q = Queue.PriorityQueue()
+        for vertex in self.vertices:
+            for neighbour in self.vertices[vertex].get_neighbours():
+                print vertex, neighbour, self.vertices[vertex].get_weight(neighbour)
+                q.put(self.vertices[vertex].get_weight(neighbour), str(vertex + neighbour))
+
+        while not q.empty():
+            print q.get()
+
+
+    def dijkstra(self, root,priority):
+        pq = PriorityQueue()
+        self.priority = 0
+        while not pq.empty():
+            currentVertex = self.vertices[pq.get()]
+            for next in currentVertex.get_neighbours():
+                newDist = currentVertex.get_weight(next)
+                # get neighbour with lowest distance
+                if newDist < next.get_weight():
+                    next.setDistance(newDist)
+                    next.setPred(currentVertex)
+                    # pq.decreaseKey(next, newDist)
+
+newGraph = graph()
+newGraph.add_vertices('A')
+newGraph.add_edge('A','B',2)
+newGraph.add_edge('B','C',5)
+newGraph.add_edge('A','D',1)
+newGraph.add_edge('C','E',3)
+newGraph.add_edge('D','I',9)
+newGraph.add_edge('E','F',5)
+newGraph.add_edge('D','C',5)
 
 print "Following is a Topological Sort of the given graph"
-newBFs.topologicalSort('A')
+# newBFs.topologicalSort('A')
 
-# if currentVertex.get_neighbours() not in q.queue:
+# newGraph.dfs_tropo_sort('A')
+# newGraph.dijkstra('A',0)
+newGraph.prim()
+
+
