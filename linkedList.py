@@ -19,8 +19,7 @@ class LL:
             self.head = newNode
             self.countNodes +=1
         else:
-            # while newNode.id> currentNode.id:# if there is head already
-                # currentNode = currentNode.Next
+            # if there is head already
             currentNode.next = newNode
             self.countNodes += 1
         print newNode.id,'\t', self.countNodes
