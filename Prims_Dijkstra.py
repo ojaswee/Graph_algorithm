@@ -1,8 +1,4 @@
-'''
-In tropological sorting we need to look at the directiom of edge
-The first vertex will always be a vertex without in-coming edges
 
-'''
 import Queue
 from Queue import PriorityQueue
 
@@ -42,28 +38,6 @@ class graph:
         if toVertex not in self.vertices:
             self.add_vertices(toVertex)
         self.vertices[fromVertex].add_neighbours(toVertex, weight)
-
-
-    def topologicalSort(self, root):
-        s = Queue.LifoQueue()  # implimenting stack
-        s.put(root)
-
-        visited = []
-
-        while not s.empty():
-            currentVertex = self.vertices[s.get()]
-
-            if currentVertex.get_name() not in visited:
-                visited.append(currentVertex.get_name())
-
-                for neighbour in currentVertex.get_neighbours():
-
-                    if neighbour not in visited:
-                        s.put(neighbour)
-                    else:
-                        print neighbour
-            else:
-                print currentVertex.get_name()
 
 
     '''
@@ -108,10 +82,10 @@ newGraph.add_edge('E','F',5)
 newGraph.add_edge('D','C',5)
 
 print "Following is a Topological Sort of the given graph"
-# newBFs.topologicalSort('A')
+newGraph.topologicalSort('A')
 
 # newGraph.dfs_tropo_sort('A')
 # newGraph.dijkstra('A',0)
-newGraph.prim()
+# newGraph.prim()
 
 
