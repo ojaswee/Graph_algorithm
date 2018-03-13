@@ -1,5 +1,6 @@
 '''
-We use adjacency list for bfs and dfs
+Using adjacency list for bfs and dfs
+
 '''
 
 import numpy as np
