@@ -1,3 +1,9 @@
+'''
+Prim's algorithm is a greedy algorithm
+It finds the minimum weight from the current node to its neighboring node and connects it. We repeat this until all the nodes are connected.
+It is useful to use a priority queue to get the shortest distance
+Please note: the vertex we will choose next has to be neighbor of current vertex.
+'''
 
 import Queue
 from Queue import PriorityQueue
@@ -40,13 +46,6 @@ class graph:
         self.vertices[fromVertex].add_neighbours(toVertex, weight)
 
 
-    '''
-    Prims find the minimum spanning tree, 
-    It is a greedy algorithm
-    we need to use priority queue because it has to get the shortest distance first
-    Here the next vertex we chose should be neighbour of current vertex
-    '''
-
     def prim(self):
         q = Queue.PriorityQueue()
         for vertex in self.vertices:
@@ -81,10 +80,6 @@ newGraph.add_edge('D','I',9)
 newGraph.add_edge('E','F',5)
 newGraph.add_edge('D','C',5)
 
-print "Following is a Topological Sort of the given graph"
-newGraph.topologicalSort('A')
-
-# newGraph.dfs_tropo_sort('A')
 # newGraph.dijkstra('A',0)
 # newGraph.prim()
 
