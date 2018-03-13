@@ -1,4 +1,7 @@
-
+'''
+We can do BFS/DFS 2 ways via adjacency list or vertices matrix
+Here I am trying to solve DFS via vertices matrix.
+'''
 graphx =[[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
         [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
@@ -43,8 +46,8 @@ def dfs_adjacency_mat(G, start, goal,count):
                     break
     return count
 
-def bfs_adjacency_mat(G, start, goal,count):
-    print G
+# def bfs_adjacency_mat(G, start, goal,count):
+#     print G
 
 #Entry point for program execution
 count = dfs_adjacency_mat(graphx, 0, 10,0)
