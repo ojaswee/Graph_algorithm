@@ -38,7 +38,7 @@ def bfs_shortest_path(graph, start, goal,count):
                     return new_path,count
             # mark node as explored
             explored.append(node)
-    # print ""
+    print ""
     # in case there's no path between the 2 nodes
     return "So sorry, but a connecting path doesn't exist :(",count
 
@@ -60,14 +60,14 @@ def dfs_iterative(graph_dfs, start, goal, count):
             return visited, count
 
 if __name__ == '__main__':
-    graph_dfs = {'1': ['6','21'],
-             '21': ['Bear','Swan'],
+    graph_dfs = {'1': ['21','6'],
+                 '6': ['20', '18'],
+             '21': ['Swan','Bear'],
              'Bear': ['21'],
              'Swan':['21'],
-             '6':['20','18'],
              '20':['Fox','Exit'],
              '18':['7'],
-             '7':['18','16','17','15'],
+             '7':['18','17','16','15'],
              '15': ['14','13'],
              '13': ['15'],
              '14': ['15'],
@@ -84,10 +84,10 @@ if __name__ == '__main__':
 
     graph_bfs = {'1': ['6','21'],
              '21': ['Bear','Swan'],
-             '6':['20','18'],
-             '20':['Fox','Exit'],
+             '6':['18','20'],
+             '20':['Exit','Fox'],
              '18':['7'],
-             '7':['18','16','17','15'],
+             '7':['15','16','17','18'],
              '15': ['14','13'],
              'Fox':['9','4'],
              '9':['19','Squirel'],
@@ -95,19 +95,19 @@ if __name__ == '__main__':
              '12':['11']}
 
 # BFS driver program
-# start = '1'
-# count = 0
-# print "All the visited nodes: ",start,
-# path,count = bfs_shortest_path(graph_bfs, start, 'Exit', count)
-# print ""
-# print "Final Path ",path
-# print "Number of visited Nodes:",count
+start = '1'
+count = 0
+print "All the visited nodes: ",start,
+path,count = bfs_shortest_path(graph_bfs, start, 'Exit', count)
+print ""
+# print "Final Path BFS",path
+print "Number of visited Nodes:",count
 
 
 # DFS driver program
-start = '1'
-path,count= list(dfs_iterative(graph_dfs, start,'Exit',count=0))
-
-print ""
-print "Final Path ",path
-print "Number of visited Nodes:",count
+# start = '1'
+# path,count= list(dfs_iterative(graph_dfs, start,'Exit',count=0))
+#
+# print ""
+# print "Final Path DFS ",path
+# print "Number of visited Nodes:",count

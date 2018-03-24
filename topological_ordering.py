@@ -79,7 +79,7 @@ def topological_sourceRemovalMethod(graph):
 
 # check how it works
 print topological(graph_A)
-print (topological_sourceRemovalMethod(graph_B))
+# print (topological_sourceRemovalMethod(graph_B))
 
-# try: topological(graph_B)
-# except ValueError: print "Cycle!"
+try: topological(graph_A)
+except ValueError: print "Cycle!"

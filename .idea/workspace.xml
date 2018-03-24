@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="27a4e50c-eb84-4047-b112-42b41ebe1512" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Prims_Dijkstra.py" afterPath="$PROJECT_DIR$/Prims_Dijkstra.py" />
+      <change beforePath="$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py" afterPath="$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py" />
+      <change beforePath="$PROJECT_DIR$/topological_ordering.py" afterPath="$PROJECT_DIR$/topological_ordering.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,19 +18,22 @@
       <file leaf-file-name="BFS_DFS_via_adjacencyList.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="107" column="13" lean-forward="true" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topological_ordering.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="topological_ordering.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/topological_ordering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1448">
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding>
+                <element signature="e#585#748#0" expanded="false" />
+                <element signature="e#760#916#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,17 +41,19 @@
       <file leaf-file-name="BFS_DFS_via_vertices_matrix.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BFS_DFS_via_vertices_matrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="340">
+              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+              <folding>
+                <element signature="e#130#1235#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Prims_Dijkstra.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Prims_Dijkstra.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prims_Dijkstra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
+            <state relative-caret-position="1972">
               <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="16" />
               <folding>
                 <element signature="e#337#349#0" expanded="true" />
@@ -101,10 +107,10 @@
         <option value="$PROJECT_DIR$/importing_from_excel_via_panda.py" />
         <option value="$PROJECT_DIR$/Tropological_Dijkstra.py" />
         <option value="$PROJECT_DIR$/tropological.py" />
-        <option value="$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py" />
-        <option value="$PROJECT_DIR$/topological_ordering.py" />
         <option value="$PROJECT_DIR$/BFS_DFS_via_vertices_matrix.py" />
         <option value="$PROJECT_DIR$/Prims_Dijkstra.py" />
+        <option value="$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py" />
+        <option value="$PROJECT_DIR$/topological_ordering.py" />
       </list>
     </option>
   </component>
@@ -129,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,6 +147,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +166,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.try_maze">
+  <component name="RunManager" selected="Python.topological_ordering">
+    <configuration name="BFS_DFS_via_adjacencyList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Graph_algorithm" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="BFS_DFS_via_vertices_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,7 +203,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Tropological_Dijkstra" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="topological_ordering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -191,25 +215,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Graph_algorithm" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tropological_Dijkstra.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="importing_from_excel_via_panda" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Graph_algorithm" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/importing_from_excel_via_panda.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topological_ordering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,18 +259,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.BFS_DFS_via_vertices_matrix" />
-      <item index="1" class="java.lang.String" itemvalue="Python.importing_from_excel_via_panda" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Tropological_Dijkstra" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tropological" />
-      <item index="4" class="java.lang.String" itemvalue="Python.try_maze" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tropological" />
+      <item index="2" class="java.lang.String" itemvalue="Python.try_maze" />
+      <item index="3" class="java.lang.String" itemvalue="Python.BFS_DFS_via_adjacencyList" />
+      <item index="4" class="java.lang.String" itemvalue="Python.topological_ordering" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.try_maze" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tropological" />
-        <item index="2" class="java.lang.String" itemvalue="Python.importing_from_excel_via_panda" />
-        <item index="3" class="java.lang.String" itemvalue="Python.BFS_DFS_via_vertices_matrix" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Tropological_Dijkstra" />
+        <item index="0" class="java.lang.String" itemvalue="Python.topological_ordering" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BFS_DFS_via_adjacencyList" />
+        <item index="2" class="java.lang.String" itemvalue="Python.BFS_DFS_via_vertices_matrix" />
+        <item index="3" class="java.lang.String" itemvalue="Python.try_maze" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tropological" />
       </list>
     </recent_temporary>
   </component>
@@ -286,18 +292,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16023268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3513812" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32155073" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42320442" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32155073" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39843068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39843068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -331,7 +336,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -358,7 +363,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#130#1235#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -465,36 +472,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/try_maze.py" />
     <entry file="file://$PROJECT_DIR$/tropological.py" />
-    <entry file="file://$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py">
+    <entry file="file://$PROJECT_DIR$/Prims_Dijkstra.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1972">
+          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="16" />
+          <folding>
+            <element signature="e#337#349#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topological_ordering.py">
+    <entry file="file://$PROJECT_DIR$/BFS_DFS_via_adjacencyList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="435">
+          <caret line="107" column="13" lean-forward="true" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BFS_DFS_via_vertices_matrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="e#130#1235#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prims_Dijkstra.py">
+    <entry file="file://$PROJECT_DIR$/topological_ordering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="-1448">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
-            <element signature="e#337#349#0" expanded="true" />
+            <element signature="e#585#748#0" expanded="false" />
+            <element signature="e#760#916#0" expanded="false" />
           </folding>
         </state>
       </provider>
