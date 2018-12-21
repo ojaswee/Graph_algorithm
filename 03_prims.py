@@ -57,19 +57,6 @@ class graph:
             print q.get()
 
 
-    def dijkstra(self, root,priority):
-        pq = PriorityQueue()
-        self.priority = 0
-        while not pq.empty():
-            currentVertex = self.vertices[pq.get()]
-            for next in currentVertex.get_neighbours():
-                newDist = currentVertex.get_weight(next)
-                # get neighbour with lowest distance
-                if newDist < next.get_weight():
-                    next.setDistance(newDist)
-                    next.setPred(currentVertex)
-                    # pq.decreaseKey(next, newDist)
-
 newGraph = graph()
 newGraph.add_vertices('A')
 newGraph.add_edge('A','B',2)
@@ -80,7 +67,4 @@ newGraph.add_edge('D','I',9)
 newGraph.add_edge('E','F',5)
 newGraph.add_edge('D','C',5)
 
-# newGraph.dijkstra('A',0)
 # newGraph.prim()
-
-
